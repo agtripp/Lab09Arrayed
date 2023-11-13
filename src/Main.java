@@ -25,8 +25,8 @@ public class Main {
             sum += dataPoints[x];
         }
         System.out.println();
-        System.out.println("The sum of the random array dataPoints is: " + sum);
-        System.out.println("The average of the random array dataPoints is: " + (sum/100));
+        System.out.println("The sum of the random array datapoints is: " + sum);
+        System.out.println("The average of the random array datapoints is: " + (sum/100));
         int userNumber = SafeInput.getRangedInt(in, "Enter a number", 1, 100);
 
         for(int x = 0; x < dataPoints.length; x++) {
@@ -36,10 +36,10 @@ public class Main {
 
         }
         System.out.println(userNumber + " appears in the list " + varCount + " times!");
-        int userNumber2 = SafeInput.getRangedInt(in, "Enter another number", 1, 100);
+        int userNumber2 = SafeInput.getRangedInt(in, "Enter new number", 1, 100);
         for(int x = 0; x < dataPoints.length; x++) {
             if(dataPoints[x] == userNumber2) {
-                System.out.println("Value " + userNumber2 + " is first found at array index " + x);
+                System.out.println("Value " + userNumber2 + " is first found in array index " + x);
                 foundVar = true;
                 break;
             }
